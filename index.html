@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Electronics & Electrical Engineer | First-Year Student</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Brief introduction about yourself, your passion for electronics and electrical engineering, and your career goals.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Autonomous Robot Car Development</h3>
+            <p>Developed a robot car programmed to perform tasks such as line following and obstacle avoidance.</p>
+            <p>Technologies Used: Arduino, MicroPython, Arduino IDE</p>
+            <ul>
+                <li>Line Following: Utilized IR sensors to detect and follow a predefined path.</li>
+                <li>Obstacle Avoidance: Integrated ultrasonic sensors to detect and navigate around obstacles.</li>
+            </ul>
+            <div class="gallery">
+                <img src="images/robot_car_1.jpg" alt="Robot Car Image 1">
+                <img src="images/robot_car_2.jpg" alt="Robot Car Image 2">
+            </div>
+            <pre><code>// Code Snippet for Sensor Initialization
+void setup() {
+  pinMode(IR_sensor, INPUT);
+  pinMode(ultrasonic_sensor, INPUT);
+}</code></pre>
+        </div>
+        <div class="project">
+            <h3>Interactive Space Trivia Game</h3>
+            <p>Led a team to develop a web application for space-themed trivia.</p>
+            <p>Technologies Used: Python, Streamlit, APIs (NASA APOD, OpenAI)</p>
+            <ul>
+                <li>Backend Development: Implemented with Python to handle data retrieval and processing.</li>
+                <li>Frontend Development: Used Streamlit for a user-friendly interface.</li>
+                <li>Team Management: Assigned tasks, tracked progress, and ensured timely delivery.</li>
+            </ul>
+            <div class="gallery">
+                <img src="images/space_trivia_1.jpg" alt="Space Trivia Image 1">
+                <img src="images/space_trivia_2.jpg" alt="Space Trivia Image 2">
+            </div>
+            <pre><code># Backend API Integration in Python
+import requests
+response = requests.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')</code></pre>
+        </div>
+        <div class="project">
+            <h3>Digital Dice Simulator for Monopoly</h3>
+            <p>Created a digital dice simulator using Multisim.</p>
+            <p>Technologies Used: Multisim, Digital Logic Design</p>
+            <ul>
+                <li>Dice Roll Simulation: Designed a circuit to generate random dice rolls.</li>
+                <li>Game Logic Implementation: Used logic gates to indicate game events (e.g., rolling doubles, going to jail).</li>
+            </ul>
+            <div class="gallery">
+                <img src="images/dice_simulator_1.jpg" alt="Dice Simulator Image 1">
+                <img src="images/dice_simulator_2.jpg" alt="Dice Simulator Image 2">
+            </div>
+            <pre><code>// Logic Design Implementation
+module dice_simulator (output reg [3:0] dice_value);</code></pre>
+        </div>
+        <div class="project">
+            <h3>Light Sensitivity Monitoring System</h3>
+            <p>Designed a PCB to monitor light sensitivity and display increments on a seven-segment display.</p>
+            <p>Technologies Used: KiCAD, Wokwi, Raspberry Pi Pico, Light Sensors</p>
+            <ul>
+                <li>Sensor Integration: Monitored light sensitivity using integrated light sensors.</li>
+                <li>Display Output: Used a seven-segment display to show light absence counts.</li>
+            </ul>
+            <div class="gallery">
+                <img src="images/light_monitor_1.jpg" alt="Light Monitor Image 1">
+                <img src="images/light_monitor_2.jpg" alt="Light Monitor Image 2">
+            </div>
+            <pre><code>// Sensor Data Processing Code
+int light_level = analogRead(light_sensor_pin);
+if (light_level < threshold) {
+  incrementDisplay();
+}</code></pre>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Detailed information about your academic background, interests in electronics and electrical engineering, and future aspirations.</p>
+        <ul>
+            <li>Programming: Python, MicroPython, Arduino IDE</li>
+            <li>Circuit Design: Multisim, KiCAD</li>
+            <li>Web Development: Streamlit</li>
+            <li>Team Management: Project planning, task assignment</li>
+        </ul>
+        <p>Education: Current institution, major, and year of study.</p>
+        <p>Certifications and Achievements: Any relevant certifications, awards, or honors.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/yourformid" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>Social Media Links: <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>, <a href="https://github.com/yourusername">GitHub</a>, <a href="https://yourblog.com">Blog</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
